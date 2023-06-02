@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "nanoidentitycontracts": {
+      "hosting": {
+        "fireship-angular-firebase": [
+          "nanoidentitycontracts"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "nanoidentitycontracts"
+  }
+}

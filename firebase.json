@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "fireship-angular-firebase",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
