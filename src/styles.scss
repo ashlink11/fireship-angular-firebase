@@ -9,10 +9,46 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
+
+/* For use in src/lib/core/theming/_palette.scss #452D6C 500*/
+$malty-verse-palette: (
+    50 : #e9e6ed,
+    100 : #c7c0d3,
+    200 : #a296b6,
+    300 : #7d6b98,
+    400 : #614c82,
+    500 : #452c6c,
+    600 : #3e2764,
+    700 : #362159,
+    800 : #2e1b4f,
+    900 : #1f103d,
+    A100 : #a079ff,
+    A200 : #7b46ff,
+    A400 : #5713ff,
+    A700 : #4800f8,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$fireship-angular-firebase-primary: mat.define-palette(mat.$indigo-palette);
+$fireship-angular-firebase-primary: mat.define-palette($malty-verse-palette);
 $fireship-angular-firebase-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
@@ -37,3 +73,5 @@ $fireship-angular-firebase-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
