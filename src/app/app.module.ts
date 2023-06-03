@@ -16,6 +16,9 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideFunctions,getFunctions } from '@angular/fire/functions';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+// import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 // import { AngularFireModule } from '@angular/fire/compat';
 // import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -31,12 +34,16 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    // AngularFirestoreModule
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
     // provideAuth(() => getAuth()),
     // provideDatabase(() => getDatabase()),
     // provideFirestore(() => getFirestore()),
     // provideFunctions(() => getFunctions()),
     // providePerformance(() => getPerformance()),
+    // provideStorage(() => getStorage())
     // provideStorage(() => getStorage()),
     // AngularFireModule.initializeApp(environment.firebase),
     // AngularFireAuthModule,
