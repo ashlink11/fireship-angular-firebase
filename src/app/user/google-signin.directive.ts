@@ -3,7 +3,7 @@ import { Directive, HostListener } from '@angular/core';
 // import firebase from "firebase/compat/app";
 // import { AngularFireAuth } from '@angular/fire/auth';
 // import firebase from 'firebase/app;
-import { Directive, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { GoogleAuthProvider } from 'firebase/auth';
 // import * as firebase from 'firebase/app';
