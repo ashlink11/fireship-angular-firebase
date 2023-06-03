@@ -7,8 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SharedModule } from './shared/shared.module';
 import { HomePageComponent } from './home-page/home-page.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
+
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
@@ -17,6 +18,10 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+// import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
+// import { AngularFireModule } from '@angular/fire/compat';
+// import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 // import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 @NgModule({
@@ -39,6 +44,10 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     // provideFunctions(() => getFunctions()),
     // providePerformance(() => getPerformance()),
     // provideStorage(() => getStorage())
+    // provideStorage(() => getStorage()),
+    // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFireAuthModule,
+    // AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
