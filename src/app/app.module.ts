@@ -18,6 +18,8 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { BoardListComponent } from './kanban/board-list/board-list.component';
+import { BoardComponent } from './kanban/board/board.component';
 // import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 // import { AngularFireModule } from '@angular/fire/compat';
@@ -27,7 +29,9 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    BoardListComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,
